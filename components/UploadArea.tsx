@@ -6,7 +6,7 @@ export default function UploadArea() {
       <div className="group relative w-full bg-white dark:bg-card-dark rounded-3xl border-2 border-dashed border-gray-300 dark:border-gray-700 hover:border-primary dark:hover:border-primary transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 overflow-hidden">
         <input
           className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-50"
-          multiple
+          multiple=""
           type="file"
         />
         <div className="flex flex-col items-center justify-center py-20 px-6 text-center relative pointer-events-none">
@@ -25,14 +25,11 @@ export default function UploadArea() {
             </div>
           </div>
           <h2 className="text-3xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary transition-colors">
-            Drag & Drop or Click to Upload
+            Drag &amp; Drop or Click to Upload
           </h2>
           <p className="text-gray-500 dark:text-gray-400 text-lg max-w-lg mx-auto mb-8 font-body">
             One place for all your files. We support automatic detection for{' '}
-            <span className="text-gray-700 dark:text-gray-200 font-medium">
-              Text, Image, and Video
-            </span>{' '}
-            formats.
+            <span className="text-gray-700 dark:text-gray-200 font-medium">Text, Image, and Video</span> formats.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-gray-50 dark:bg-gray-800/50 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 group-hover:border-blue-200 dark:group-hover:border-blue-800 transition-colors">
